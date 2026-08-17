@@ -1,2 +1,0 @@
-# satayesh-portfolio
-
