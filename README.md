@@ -62,53 +62,7 @@ Then open:
 http://localhost:3000
 
 ---
-``bash
-Project Structure
-portfolio/
-├─ public/
-│  └─ favicon.svg
-├─ src/
-│  ├─ app/
-│  │  ├─ layout.tsx
-│  │  ├─ page.tsx
-│  │  └─ globals.css
-│  ├─ components/
-│  │  ├─ Navbar.tsx
-│  │  ├─ Footer.tsx
-│  │  ├─ sections/
-│  │  │  ├─ Hero.tsx
-│  │  │  ├─ About.tsx
-│  │  │  ├─ Skills.tsx
-│  │  │  ├─ Experience.tsx
-│  │  │  ├─ Projects.tsx
-│  │  │  ├─ Education.tsx
-│  │  │  ├─ Certifications.tsx
-│  │  │  ├─ Recognition.tsx
-│  │  │  └─ Contact.tsx
-│  │  ├─ three/
-│  │  │  ├─ Scene.tsx
-│  │  │  ├─ CodeConstellation.tsx
-│  │  │  └─ IdentityOrb.tsx
-│  │  └─ ui/
-│  │     ├─ Reveal.tsx
-│  │     ├─ SectionHeading.tsx
-│  │     ├─ MagneticButton.tsx
-│  │     ├─ ProjectCard.tsx
-│  │     ├─ CodeWindow.tsx
-│  │     ├─ AnimatedCounter.tsx
-│  │     └─ AmbientBlobs.tsx
-│  ├─ hooks/
-│  │  ├─ useReducedMotion.ts
-│  │  ├─ useActiveSection.ts
-│  │  └─ useWebGLSupport.ts
-│  └─ lib/
-│     └─ data.ts
-├─ tailwind.config.ts
-├─ next.config.mjs
-├─ postcss.config.js
-├─ tsconfig.json
-└─ package.json
-Content Source and Editing
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 All website content is stored in a single file:
