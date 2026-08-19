@@ -48,15 +48,7 @@ The design uses a **Light Theme** with a technical and minimalist visual identit
 
 ---
 
-## Prerequisites
 
-- **Node.js 18.18 or higher** (Node.js 20 LTS is recommended)
-- **npm** (pnpm or yarn can also be used)
-- Internet access for installing packages and downloading Google Fonts during the build process
-
-> ⚠️ This project was developed in an environment without internet/npm registry access, so `npm install` and `npm run build` have not yet been tested on a real machine. Before deployment, make sure to run both commands locally and review the output.
-
----
 
 ## Installation and Running
 
@@ -69,7 +61,8 @@ npm run dev
 Then open:
 http://localhost:3000
 
-
+---
+``bash
 Project Structure
 portfolio/
 ├─ public/
