@@ -11,8 +11,8 @@ export function Projects() {
       <div className="section-shell relative">
         <SectionHeading
           eyebrow="Projects"
-          title="Selected work, in progress."
-          description="Real project write-ups are being prepared — these slots are structured placeholders, not filler claims."
+          title="Selected work."
+          description="A selection of projects built and contributed to by Satayesh."
         />
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
