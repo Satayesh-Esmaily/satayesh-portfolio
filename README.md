@@ -66,3 +66,258 @@ npm install
 
 # Start the development server
 npm run dev
+
+Then open:
+
+http://localhost:3000
+Available Scripts
+Command	Description
+npm run dev	Starts the development server with Hot Reload
+npm run build	Builds the production version
+npm run start	Starts the production server after build
+npm run lint	Runs ESLint to check the code
+Project Structure
+portfolio/
+├─ public/
+│  └─ favicon.svg
+├─ src/
+│  ├─ app/
+│  │  ├─ layout.tsx
+│  │  ├─ page.tsx
+│  │  └─ globals.css
+│  ├─ components/
+│  │  ├─ Navbar.tsx
+│  │  ├─ Footer.tsx
+│  │  ├─ sections/
+│  │  │  ├─ Hero.tsx
+│  │  │  ├─ About.tsx
+│  │  │  ├─ Skills.tsx
+│  │  │  ├─ Experience.tsx
+│  │  │  ├─ Projects.tsx
+│  │  │  ├─ Education.tsx
+│  │  │  ├─ Certifications.tsx
+│  │  │  ├─ Recognition.tsx
+│  │  │  └─ Contact.tsx
+│  │  ├─ three/
+│  │  │  ├─ Scene.tsx
+│  │  │  ├─ CodeConstellation.tsx
+│  │  │  └─ IdentityOrb.tsx
+│  │  └─ ui/
+│  │     ├─ Reveal.tsx
+│  │     ├─ SectionHeading.tsx
+│  │     ├─ MagneticButton.tsx
+│  │     ├─ ProjectCard.tsx
+│  │     ├─ CodeWindow.tsx
+│  │     ├─ AnimatedCounter.tsx
+│  │     └─ AmbientBlobs.tsx
+│  ├─ hooks/
+│  │  ├─ useReducedMotion.ts
+│  │  ├─ useActiveSection.ts
+│  │  └─ useWebGLSupport.ts
+│  └─ lib/
+│     └─ data.ts
+├─ tailwind.config.ts
+├─ next.config.mjs
+├─ postcss.config.js
+├─ tsconfig.json
+└─ package.json
+Content Source and Editing
+
+All website content is stored in a single file:
+
+src/lib/data.ts
+
+This includes:
+
+Personal information
+Work experience
+Education
+Skills
+Certifications
+Awards
+Contact information
+Projects
+
+To update the website content, simply edit src/lib/data.ts. No component changes are required.
+
+Note: The projects section currently contains three clearly labeled placeholder cards because real project details were not available in the provided resume. No fictional projects or achievements have been added.
+
+Color and Theme System
+
+The website uses centralized color tokens defined in:
+
+tailwind.config.ts
+src/app/globals.css
+Current Light Theme Palette
+Token	Value	Usage
+ink	#f8f7f3	Main background
+ink-soft	#f0efe8	Alternating sections
+ink-raised	#e8e6dc	Highlighted cards
+paper	#16161c	Main text
+paper-dim	#5c5c68	Secondary text
+accent	#4f46e5	Primary Indigo color
+signal	#0d9488	Secondary Teal color
+line	rgba(22,22,28,0.1)	Borders and dividers
+
+Changing the color values in tailwind.config.ts updates the entire website because the components use centralized color classes.
+
+3D Scenes
+Hero — Code Constellation
+
+Located at:
+
+src/components/three/CodeConstellation.tsx
+
+Features:
+
+Connected glowing code nodes
+Floating programming symbols
+Torus, octahedron, box, and dodecahedron shapes
+Low-poly developer robot
+Ambient particles
+Mouse-based camera parallax
+Mobile performance optimization
+
+On mobile devices, the number of nodes and particles is reduced and additional 3D elements are disabled.
+
+About — Identity Orb
+
+Located at:
+
+src/components/three/IdentityOrb.tsx
+
+Features:
+
+Central wireframe core
+Rotating identity labels
+Frontend
+Python
+React
+Next.js
+Three.js
+QA
+Decorative orbital rings
+
+Both 3D scenes:
+
+Respect prefers-reduced-motion
+Include WebGL fallbacks
+Use dynamic imports
+Disable server-side rendering for Canvas components
+Animations
+
+Animations are implemented using Framer Motion.
+
+Included animations:
+
+Hero entrance animations
+Scroll Reveal animations
+Staggered skill and project cards
+Magnetic buttons
+3D project-card Tilt effects
+Animated Duolingo score counter
+Circular progress animation
+Terminal typing animation
+Animated gradient blobs
+Active navigation indicator
+
+All animations respect prefers-reduced-motion.
+
+Responsive Design and Accessibility
+
+The portfolio is designed for:
+
+Mobile
+Tablet
+Laptop
+Desktop
+
+Accessibility features include:
+
+Semantic HTML
+Proper heading hierarchy
+Visible keyboard focus states
+Skip-to-content navigation
+Appropriate alt attributes
+aria-label attributes
+Responsive mobile navigation
+Reduced-motion support
+WebGL fallback
+Reviewed text/background contrast
+Performance
+
+Performance optimizations include:
+
+Client-side loading for 3D components
+next/dynamic with ssr: false
+Limited Canvas dpr
+Reduced 3D complexity on mobile
+Optimized fonts using next/font/google
+Lazy loading for 3D scenes
+Suspense for asynchronous scene loading
+
+Before deployment, it is recommended to run Lighthouse in Chrome DevTools and check:
+
+Performance
+Accessibility
+Best Practices
+SEO
+SEO
+
+SEO metadata is configured in:
+
+src/app/layout.tsx
+
+Included:
+
+SEO title
+Meta description
+Open Graph metadata
+Twitter Card metadata
+SVG favicon
+Title
+Satayesh Esmaily | Frontend Developer & Python Enthusiast
+
+A custom Open Graph image can also be added:
+
+src/app/opengraph-image.png
+Contact Form
+
+The Contact section contains a complete form UI with:
+
+Input validation
+Accessible form controls
+Error handling
+Responsive styling
+
+However, the form is not currently connected to an email service or backend.
+
+The form does not pretend that an email was successfully sent. Instead, users are directed to the direct email address.
+
+Possible solutions for implementing real email functionality:
+
+Resend
+SendGrid
+Formspree
+Web3Forms
+Next.js Server Actions
+
+For Resend or SendGrid, a Route Handler can be created at:
+
+src/app/api/contact/route.ts
+Deployment
+
+This is a standard Next.js application and can be deployed on any platform that supports Next.js.
+
+Recommended platforms:
+
+
+Author
+
+Satayesh Esmaily
+
+Frontend Developer & Python Enthusiast
+
+📧 Email: setayeshesmaily59@gmail.com
+
+🐙 GitHub: Satayesh-Esmaily
