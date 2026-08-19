@@ -84,34 +84,29 @@ export const experience = [
   },
 ];
 
-// Real project details were not provided in the CV — these are clearly
-// marked placeholders rather than invented work, ready to be swapped in.
 export const projects = [
   {
-    title: "Project Placeholder — Frontend Build",
-    isPlaceholder: true,
+    title: "KaarYab Afghanistan",
     description:
-      "A frontend project slot reserved for an upcoming React / Next.js build. Swap this card's content once the project is ready to showcase.",
-    tech: ["React", "Next.js", "Tailwind CSS"],
-    github: "",
+      "A job-seeking platform created to connect Afghan job seekers with employers through job listings, search, and filtering.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/Satayesh-Esmaily/afghan-kaaryab",
     demo: "",
   },
   {
-    title: "Project Placeholder — Python / Robotics",
-    isPlaceholder: true,
+    title: "Goal Tracker",
     description:
-      "A slot for a Python or robotics project — sensor logic, control systems, or a Pygame build — pending write-up and repository link.",
-    tech: ["Python", "Pygame", "Robotics"],
-    github: "",
-    demo: "",
+      "A multi-page React application for creating goals, tracking progress, monitoring streaks, and visualizing achievements with a responsive dashboard.",
+    tech: ["React", "Firebase", "Recharts", "RTL / LTR"],
+    github: "https://github.com/Satayesh-Esmaily/Goal-Tracker-",
+    demo: "https://goal-tracker-project.vercel.app",
   },
   {
-    title: "Project Placeholder — QA / Testing Case Study",
-    isPlaceholder: true,
+    title: "Taply",
     description:
-      "A slot for a testing case study from QA work — test plans, bug reports, and coverage improvements — pending permission to publish details.",
-    tech: ["Jasmine", "Karma", "Manual Testing"],
-    github: "",
+      "A project developed as part of the Mlue-Code team. View the repository for the complete implementation and project details.",
+    tech: [],
+    github: "https://github.com/Mlue-Code/-Taply",
     demo: "",
   },
 ];
