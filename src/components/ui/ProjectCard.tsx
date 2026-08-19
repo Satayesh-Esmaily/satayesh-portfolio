@@ -40,11 +40,6 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="relative">
         <div className="flex items-start justify-between gap-4">
           <h3 className="font-display text-xl font-medium text-paper">{project.title}</h3>
-          {project.isPlaceholder && (
-            <span className="shrink-0 rounded-full border border-line px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest2 text-paper-dim">
-              Placeholder
-            </span>
-          )}
         </div>
         <p className="mt-4 text-sm leading-relaxed text-paper-dim">{project.description}</p>
 
@@ -67,11 +62,7 @@ export function ProjectCard({ project }: { project: Project }) {
           >
             <Github size={15} /> Code
           </a>
-        ) : (
-          <span className="flex items-center gap-1.5 text-sm text-paper-dim/50">
-            <Github size={15} /> Code — TBA
-          </span>
-        )}
+        ) : null}
         {project.demo ? (
           <a
             href={project.demo}
@@ -81,9 +72,7 @@ export function ProjectCard({ project }: { project: Project }) {
           >
             Live demo <ArrowUpRight size={15} />
           </a>
-        ) : (
-          <span className="flex items-center gap-1.5 text-sm text-paper-dim/50">Demo — TBA</span>
-        )}
+        ) : null}
       </div>
     </motion.div>
   );
