@@ -48,19 +48,10 @@ The design uses a **Light Theme** with a technical and minimalist visual identit
 
 ---
 
-## Prerequisites
 
-- **Node.js 18.18 or higher** (Node.js 20 LTS is recommended)
-- **npm** (pnpm or yarn can also be used)
-- Internet access for installing packages and downloading Google Fonts during the build process
-
-> ⚠️ This project was developed in an environment without internet/npm registry access, so `npm install` and `npm run build` have not yet been tested on a real machine. Before deployment, make sure to run both commands locally and review the output.
-
----
 
 ## Installation and Running
 
-```bash
 # Install dependencies
 npm install
 
@@ -68,61 +59,12 @@ npm install
 npm run dev
 
 Then open:
-
 http://localhost:3000
-Available Scripts
-Command	Description
-npm run dev	Starts the development server with Hot Reload
-npm run build	Builds the production version
-npm run start	Starts the production server after build
-npm run lint	Runs ESLint to check the code
-Project Structure
-portfolio/
-├─ public/
-│  └─ favicon.svg
-├─ src/
-│  ├─ app/
-│  │  ├─ layout.tsx
-│  │  ├─ page.tsx
-│  │  └─ globals.css
-│  ├─ components/
-│  │  ├─ Navbar.tsx
-│  │  ├─ Footer.tsx
-│  │  ├─ sections/
-│  │  │  ├─ Hero.tsx
-│  │  │  ├─ About.tsx
-│  │  │  ├─ Skills.tsx
-│  │  │  ├─ Experience.tsx
-│  │  │  ├─ Projects.tsx
-│  │  │  ├─ Education.tsx
-│  │  │  ├─ Certifications.tsx
-│  │  │  ├─ Recognition.tsx
-│  │  │  └─ Contact.tsx
-│  │  ├─ three/
-│  │  │  ├─ Scene.tsx
-│  │  │  ├─ CodeConstellation.tsx
-│  │  │  └─ IdentityOrb.tsx
-│  │  └─ ui/
-│  │     ├─ Reveal.tsx
-│  │     ├─ SectionHeading.tsx
-│  │     ├─ MagneticButton.tsx
-│  │     ├─ ProjectCard.tsx
-│  │     ├─ CodeWindow.tsx
-│  │     ├─ AnimatedCounter.tsx
-│  │     └─ AmbientBlobs.tsx
-│  ├─ hooks/
-│  │  ├─ useReducedMotion.ts
-│  │  ├─ useActiveSection.ts
-│  │  └─ useWebGLSupport.ts
-│  └─ lib/
-│     └─ data.ts
-├─ tailwind.config.ts
-├─ next.config.mjs
-├─ postcss.config.js
-├─ tsconfig.json
-└─ package.json
-Content Source and Editing
 
+---
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 All website content is stored in a single file:
 
 src/lib/data.ts
