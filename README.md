@@ -60,7 +60,6 @@ The design uses a **Light Theme** with a technical and minimalist visual identit
 
 ## Installation and Running
 
-```bash
 # Install dependencies
 npm install
 
@@ -68,14 +67,9 @@ npm install
 npm run dev
 
 Then open:
-
 http://localhost:3000
-Available Scripts
-Command	Description
-npm run dev	Starts the development server with Hot Reload
-npm run build	Builds the production version
-npm run start	Starts the production server after build
-npm run lint	Runs ESLint to check the code
+
+
 Project Structure
 portfolio/
 ├─ public/
@@ -123,6 +117,7 @@ portfolio/
 └─ package.json
 Content Source and Editing
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 All website content is stored in a single file:
 
 src/lib/data.ts
