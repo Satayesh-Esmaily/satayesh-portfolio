@@ -87,7 +87,7 @@ function Rings() {
 
   return (
     <>
-      <line rotation={[Math.PI / 2.3, 0, 0]}>
+      <lineSegments rotation={[Math.PI / 2.3, 0, 0]}>
         <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
@@ -95,8 +95,8 @@ function Rings() {
           />
         </bufferGeometry>
         <lineBasicMaterial color={ACCENT} transparent opacity={0.25} />
-      </line>
-      <line rotation={[Math.PI / 2.6, 0, 0]}>
+      </lineSegments>
+      <lineSegments rotation={[Math.PI / 2.6, 0, 0]}>
         <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
@@ -104,7 +104,7 @@ function Rings() {
           />
         </bufferGeometry>
         <lineBasicMaterial color={SIGNAL} transparent opacity={0.2} />
-      </line>
+      </lineSegments>
     </>
   );
 }
