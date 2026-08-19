@@ -1,9 +1,9 @@
 "use client";
 
-import { motion, useMotionValue, useSpring } from "framer-motion";
-import { AnchorHTMLAttributes, MouseEvent, ReactNode, useRef } from "react";
+import { HTMLMotionProps, motion, useMotionValue, useSpring } from "framer-motion";
+import { MouseEvent, ReactNode, useRef } from "react";
 
-interface MagneticButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+interface MagneticButtonProps extends Omit<HTMLMotionProps<"a">, "children"> {
   children: ReactNode;
   variant?: "primary" | "ghost";
 }
